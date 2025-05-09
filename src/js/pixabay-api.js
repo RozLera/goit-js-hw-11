@@ -1,5 +1,4 @@
 import axios from 'axios';
-export function getImagesByQuery(query) {}
 axios.defaults.baseURL = 'https://pixabay.com/api';
 axios.defaults.headers.common['key'] = '50191530-19c60f56ef7d22126639596e8';
 
