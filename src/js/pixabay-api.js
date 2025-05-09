@@ -20,3 +20,4 @@ export function getImagesByQuery(guery) {
     },
   }).then(res => res);
 }
+//
