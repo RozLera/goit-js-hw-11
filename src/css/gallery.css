@@ -1,0 +1,43 @@
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  cursor: pointer;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  cursor: pointer;
+}
