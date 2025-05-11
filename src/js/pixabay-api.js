@@ -1,6 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'https://pixabay.com/api';
-axios.defaults.headers.common['key'] = '50191530-19c60f56ef7d22126639596e8';
+axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 const params = {
   image_type: 'photo',
@@ -8,15 +7,16 @@ const params = {
   safesearch: true,
 };
 
-export function getImagesByQuery(guery) {
+export function getImagesByQuery(query) {
   return axios('', {
     params: {
-      q: guery,
+      q: query,
       key: '50191530-19c60f56ef7d22126639596e8',
       image_type: 'photo',
-      oriention: 'horizontal',
+      orientation: 'horizontal',
       safesearch: true,
     },
-  }).then(res => res);
+  })
+    .then(res => res.data)
+    .catch(error => error);
 }
-//
